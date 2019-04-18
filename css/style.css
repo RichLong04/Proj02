@@ -48,26 +48,29 @@ header {
 .reg-btn {
   width: 20%;
   margin: 5px 40% 10px 40%;
-  background-color: #aa1923;
-  color: cornsilk;
+  background-color: brown;
+  border: none;
+  color: #FBEEC1;
   border-radius: 3px;
-  border:1px solid cornsilk;
   text-align: center;
   font-size: 1.0em;
   line-height: 1.0em;
   cursor: pointer;
-  
+
 
 }
+
 .reg-btn:hover {
-        background-color: #262626;
-        transition-duration: 0.5s;
-      }
+  background-color: #262626;
+  transition-duration: 0.5s;
+}
 
 
 .graz {
   width: 100%;
   margin: 0;
+  padding-bottom: 50px;
+  margin-top: 10px;
 
 }
 
@@ -76,7 +79,7 @@ header {
 /*--------------------------------------------footer/flexbox----------*/
 
 footer {
-  background-color: darkcyan;
+  background-color: #8d8741;
   color: #262626;
   font-family: 'Raleway', sans-serif;
 }
@@ -190,10 +193,12 @@ p {
 nav {
   margin: 0;
   padding: 0;
-  font-size: 1.0em;
+  font-size: 1.04em;
   line-height: 2.0em;
-  background-color: darkcyan;
-  border-bottom: 1px solid cadetblue;
+  font-family: sans-serif;
+  font-weight: 500;
+
+
 }
 
 
@@ -225,7 +230,7 @@ nav ul li {
   margin: 0px;
   display: inline-block;
   float: left;
-  background-color: darkcyan;
+  background-color:#bc986a;
 }
 
 /* Styling the links */
@@ -233,11 +238,11 @@ nav ul li {
 nav a {
   display: block;
   padding: 14px 20px;
-  background-color: cadetblue;
-  color: #000;
+  background-color: #bc986a;
+  color: #262626;
   font-size: .95em;
   text-decoration: none;
-  font-family: sans-serif;
+
 
 }
 
@@ -309,16 +314,15 @@ li > a:only-child:after {
 /*-------------------------------------------------resistration form-----------*/
 
 .reg-header {
-  background-color: darkcyan;
+  background-color:darkcyan;
   text-align: left;
-  border: 1px solid cornsilk;
   border-radius: 4px;
-  padding: 10px 10px 15px 10px;
+  padding: 5px 10px 15px 10px;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   margin-top: 50px;
-text-align: center;
-font-size: .95em;
+  text-align: center;
+  font-size: .95em;
 }
 
 .info-header {
@@ -331,20 +335,18 @@ font-size: .95em;
 .info {
   background-color: darkcyan;
   text-align: left;
-  border: 1px solid cornsilk;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 0px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   font-family: 'Raleway', sans-serif;
 }
 
 .days {
   background-color: darkcyan;
   text-align: center;
-  border: 1px solid cornsilk;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 0px 10px;
+  padding: 1px 10px 0 10px;
   font-size: .95em;
   font-family: 'Raleway', sans-serif;
 }
@@ -352,7 +354,7 @@ font-size: .95em;
 .days-inner {
   width: 95%;
   margin: 0px auto 10px auto;
-  border-bottom: 1px solid cornsilk;
+  border-bottom: 1px solid #fbeec1;
   font-size: 1.25em;
 }
 
@@ -364,13 +366,16 @@ font-size: .95em;
 
 .light {
   font-weight: bolder;
-  color: black;
+  color: #262626;
   font-family: 'Libre Baskerville', serif
 }
 
 label {
-  color: black;
+  color: #262626;
+  padding-left: 10px;
+
 }
+
 
 
 input:focus {
@@ -384,7 +389,7 @@ table {
   width: 75%;
   margin: auto;
   text-align: left;
-  color: black;
+  color: #262626;
 }
 
 td {
@@ -397,7 +402,7 @@ input[type=text] {
   padding: 4px 4px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #000;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -407,7 +412,7 @@ input[type=email] {
   padding: 4px 4px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #000;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -417,10 +422,12 @@ input[type=tel] {
   padding: 4px 4px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #000;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+input [type="radio"] {}
 
 input[type="submit"] {
   width: 100%;
@@ -428,8 +435,8 @@ input[type="submit"] {
   font-size: .80em;
   border-radius: 4px;
   background-color: darkcyan;
-  color: cornsilk;
-  border: 1px solid cornsilk;
+  color: #fbeec1;
+  border: none;
   margin-bottom: 10px;
 }
 
@@ -440,9 +447,10 @@ input[type="reset"] {
   font-size: .80em;
   border-radius: 4px;
   background-color: darkcyan;
-  color: cornsilk;
-  border: 1px solid cornsilk;
+  color: #fbeec1;
+  border: none;
 }
+
 
 input[type="submit"]:hover {
   background-color: #262626;
@@ -647,13 +655,10 @@ input[type="reset"]:hover {
 /*----------------------------------------------tablets----------*/
 
 @media(min-width:769px) {
-
-
-
   header {
     width: 100%;
     margin: 0;
-    background-color: darkcyan;
+    background-color: #8d8741;
   }
   nav {
     width: 95%;
@@ -673,16 +678,13 @@ input[type="reset"]:hover {
     padding-left: 10px;
     font-size: 1.0em;
     line-height: 1.0em;
-
   }
   .col-outer {
     background-color: darkcyan;
     width: 100%;
   }
-
-
   .col-inner {
-    background-color: darkcyan;
+    background-color: blanchedalmond;
     width: 100%;
     margin: auto;
   }
@@ -691,41 +693,33 @@ input[type="reset"]:hover {
     margin: auto;
     background-color: brown;
     padding-top: 20px;
-
-
   }
   .reg-inner {
     width: 90%;
     margin: auto;
     background-color: #aa1923;
-
     padding-right: 10px;
-
     padding-left: 10px;
   }
   input[type="submit"] {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-
   }
   input[type="submit"]:hover {
     width: 58%;
     margin-left: 21%;
     margin-right: 21%;
-
   }
   input[type="reset"] {
     width: 20%;
     margin-left: 40%;
     margin-right: 40%;
-
   }
   input[type="reset"]:hover {
     width: 18%;
     margin-left: 41%;
     margin-right: 41%;
-
   }
   .hands {
     width: 70%;
@@ -734,13 +728,14 @@ input[type="reset"]:hover {
     margin-bottom: 20px;
     opacity: .7;
   }
+}
 
   /*----------------------------------------------laptops---------*/
-  @media (min-width: 992px) {
+  @media (min-width: 990px) {
     header {
       width: 100%;
       margin: 0;
-      background-color: darkcyan;
+      background-color: #8d8741;
     }
     nav {
       width: 95%;
@@ -764,64 +759,57 @@ input[type="reset"]:hover {
       padding-left: 10px;
       font-size: 1.0em;
       line-height: 1.0em;
-
     }
-
-
     .col-inner {
-      background-color: darkcyan;
+      background-color: #daad86;
       width: 100%;
       margin: auto;
     }
     .reg-outer {
-      width: 70%;
+      width: 100%;
       margin: auto;
-      background-color: brown;
+      background-color: #bc986a;
       padding-top: 20px;
-
-
     }
     .reg-inner {
-      width: 60%;
+      width: 45%;
       margin: auto;
-      background-color: #aa1923;
-
-      padding-right: 10px;
-
-      padding-left: 10px;
+      background-color: brown;
+      padding: 5px 10px 0px 10px;
     }
+
     input[type="submit"] {
       width: 60%;
       margin-left: 20%;
       margin-right: 20%;
-
     }
     input[type="submit"]:hover {
       width: 58%;
       margin-left: 21%;
       margin-right: 21%;
-
     }
     input[type="reset"] {
       width: 20%;
       margin-left: 40%;
       margin-right: 40%;
-
     }
     input[type="reset"]:hover {
       width: 18%;
       margin-left: 41%;
       margin-right: 41%;
-
+    }
+    .hands-index {
+      width: 30%;
+      margin: 10px 35% 5px 35%;
+      opacity: .8;
     }
     .hands {
-      width: 70%;
-      margin-left: 15%;
-      margin-right: 15%;
-      margin-bottom: 20px;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 10px;
       opacity: .7;
     }
-
     .container-1 {
       width: 100%;
       margin: 0;
@@ -833,11 +821,15 @@ input[type="reset"]:hover {
       border: none;
       padding: 0 5px;
     }
+    h1 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+}
     /*-------------------------------------------widescreens---------*/
     @media screen and (min-width: 1200px) {
-
-
-
       nav {
         width: 75%;
         margin: auto;
@@ -866,59 +858,59 @@ input[type="reset"]:hover {
         background-color: #262626;
       }
       .col-inner {
-        background-color: darkcyan;
+        background-color: #daad86;
         width: 70%;
         margin: auto;
       }
       .reg-outer {
         width: 70%;
         margin: auto;
-        background-color: brown;
+        background-color: #daad86;
         padding-top: 20px;
-
-
       }
       .reg-inner {
         width: 40%;
         margin: auto;
-        background-color: #aa1923;
+        background-color:brown;
         padding-right: 10px;
         padding-left: 10px;
+        padding-top: 3px;
+      }
+      .reg-btn {
+  width: 10%;
+  margin: 5px 45% 10px 45%;
+        line-height: 2.0em
       }
       input[type="submit"] {
         width: 60%;
         margin-left: 20%;
         margin-right: 20%;
-
       }
       input[type="submit"]:hover {
         width: 58%;
         margin-left: 21%;
         margin-right: 21%;
-
       }
       input[type="reset"] {
         width: 20%;
         margin-left: 40%;
         margin-right: 40%;
-
       }
       input[type="reset"]:hover {
         width: 18%;
         margin-left: 41%;
         margin-right: 41%;
-
       }
-      .hands-index{
-        width:38%;
-        margin:10px 31% 5px 31%;
-       opacity:.8;
+      .hands-index {
+        width: 38%;
+        margin: 10px 31% 5px 31%;
+        opacity: .8;
       }
-      
       .hands {
-        width:70%;
+        width: 70%;
         margin-left: 15%;
         margin-right: 15%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         opacity: .7;
       }
+    }
