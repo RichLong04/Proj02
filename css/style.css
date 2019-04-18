@@ -1,0 +1,924 @@
+/* CSS Document */
+
+html {}
+
+body {
+  background: #262626;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+
+
+}
+
+header {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+
+  padding-top: 5px;
+
+}
+
+.globe {
+  width: 16%;
+  margin: 0 42% 0 42%;
+}
+
+.icons {
+  width: 60%;
+  margin: 10px 20% 20px 20%;
+}
+
+.intro {
+
+  border-bottom: 2px solid brown;
+  width: 90%;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.reg-btn {
+  width: 20%;
+  margin: 5px 40% 10px 40%;
+  background-color: #aa1923;
+  color: cornsilk;
+  border-radius: 3px;
+  border:1px solid cornsilk;
+  text-align: center;
+  font-size: 1.0em;
+  line-height: 1.0em;
+  cursor: pointer;
+  
+
+}
+.reg-btn:hover {
+        background-color: #262626;
+        transition-duration: 0.5s;
+      }
+
+
+.graz {
+  width: 100%;
+  margin: 0;
+
+}
+
+
+
+/*--------------------------------------------footer/flexbox----------*/
+
+footer {
+  background-color: darkcyan;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.icon-bar {
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.fa {
+  padding: 10px;
+
+}
+
+.fa:hover {
+  color: firebrick;
+  transition-duration: 0.5s;
+}
+
+
+.content {
+  margin-left: 75px;
+  font-size: 28px;
+}
+
+.container-1 div {
+  padding: 2px;
+
+}
+
+.box-1 {
+  flex-basis: 25%;
+  font-size: .95em;
+}
+
+
+.copywrite {
+  text-align: center;
+  font-size: .75em;
+  line-height: .75em;
+  padding-bottom: 5px;
+}
+
+.email {
+  font-size: 1.0em;
+  line-height: 1.0em;
+
+}
+
+/*-----------------------------------------headings/text----------*/
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  color: #262626;
+
+
+}
+
+h2 {
+  font-size: 23px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  color: #262626;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: lighter;
+  color: #262626;
+  padding: 15px 0;
+
+}
+
+h3 a {
+  color: #FFF8dc;
+}
+
+.banner,
+.tab-banner {
+  padding-top: 60px;
+}
+
+
+a {
+  color: #262626;
+}
+
+p {
+  text-align: center;
+}
+
+/*----------------------------------------nav----------*/
+
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+
+nav {
+  margin: 0;
+  padding: 0;
+  font-size: 1.0em;
+  line-height: 2.0em;
+  background-color: darkcyan;
+  border-bottom: 1px solid cadetblue;
+}
+
+
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* Positioning the navigation items inline */
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: darkcyan;
+}
+
+/* Styling the links */
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  background-color: cadetblue;
+  color: #000;
+  font-size: .95em;
+  text-decoration: none;
+  font-family: sans-serif;
+
+}
+
+
+nav ul li ul li:hover {
+  background-color: darkcyan;
+
+}
+
+/* Background color change on Hover */
+
+nav a:hover {
+  background-color: #262626;
+  color: cornsilk;
+  transition-duration: 1.0s;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+  display: inherit;
+
+}
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 100%;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li > a:after {
+  content: ' +';
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
+/**end of nav**/
+
+/*-------------------------------------------------resistration form-----------*/
+
+.reg-header {
+  background-color: darkcyan;
+  text-align: left;
+  border: 1px solid cornsilk;
+  border-radius: 4px;
+  padding: 10px 10px 15px 10px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 50px;
+text-align: center;
+font-size: .95em;
+}
+
+.info-header {
+
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: .90em;
+}
+
+.info {
+  background-color: darkcyan;
+  text-align: left;
+  border: 1px solid cornsilk;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0px 10px 5px 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.days {
+  background-color: darkcyan;
+  text-align: center;
+  border: 1px solid cornsilk;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  font-size: .95em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.days-inner {
+  width: 95%;
+  margin: 0px auto 10px auto;
+  border-bottom: 1px solid cornsilk;
+  font-size: 1.25em;
+}
+
+.cards {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+.light {
+  font-weight: bolder;
+  color: black;
+  font-family: 'Libre Baskerville', serif
+}
+
+label {
+  color: black;
+}
+
+
+input:focus {
+  background-color: lemonchiffon;
+
+}
+
+
+
+table {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  color: black;
+}
+
+td {
+  padding: 10px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 8px 8px;
+  font-size: .80em;
+  border-radius: 4px;
+  background-color: darkcyan;
+  color: cornsilk;
+  border: 1px solid cornsilk;
+  margin-bottom: 10px;
+}
+
+input[type="reset"] {
+  width: 40%;
+  padding: 8px 8px;
+  margin: 0 30% 40px 30%;
+  font-size: .80em;
+  border-radius: 4px;
+  background-color: darkcyan;
+  color: cornsilk;
+  border: 1px solid cornsilk;
+}
+
+input[type="submit"]:hover {
+  background-color: #262626;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+input[type="reset"]:hover {
+  background-color: #262626;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: 38%;
+  margin-left: 31%;
+  margin-right: 31%;
+}
+
+
+/*--------------------------------------------------------media queires----------*/
+
+/*--------------------------------------------------------small phone---------*/
+
+@media(max-width :375px) {
+
+  nav ul li {
+    display: block;
+    width: 94%;
+
+  }
+}
+
+/*---------------------------------------------------------big phones----------*/
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .banner {
+    display: none;
+  }
+
+  .cell-banner {
+    display: block;
+    padding-top: 110px;
+    width: 100%;
+    margin: 0;
+  }
+  .reg-btn {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 10px;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+
+  }
+  .reg-btn:hover {
+    width: 88%;
+    margin: 0 6% 0 6%;
+    transition-duration: .5s;
+  }
+  .globe {
+    width: 30%;
+    margin: 5px 35% 0 35%;
+  }
+  .col-outer {
+    background-color: darkcyan;
+    width: 100%;
+  }
+
+  .col-inner {
+    width: 95%;
+    margin: auto;
+  }
+  .logo {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+  /*-----------------------------------------------registration form mobile-----------------*/
+  .reg-outer {
+    width: 100%;
+    background-color: brown;
+    padding-top: 20px;
+
+
+  }
+
+  .reg-inner {
+    width: 90%;
+    margin: auto;
+
+
+  }
+
+  .reg-header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: .95em;
+    padding-bottom: 15px;
+    margin-top: 100px;
+  }
+  .hands {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+    opacity: .7;
+  }
+  /*---------------------------------------------nav for mobile-------------------------*/
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: cadetblue;
+    padding: 14px 20px;
+    color: #FFF8dc;
+    font-size: .95em;
+    text-decoration: none;
+  }
+
+  .toggle:hover {
+    background-color: #000;
+    color: #FFF8dc;
+    transition-duration: 1.5s;
+    cursor: pointer;
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    transition-duration: 1.5s;
+    cursor: pointer;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #fff8dc;
+    font-size: .95em;
+
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: cadetblue;
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #000;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+    transition-duration: 1.5s;
+
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+}
+
+/*----------------------------------------------tablets----------*/
+
+@media(min-width:769px) {
+
+
+
+  header {
+    width: 100%;
+    margin: 0;
+    background-color: darkcyan;
+  }
+  nav {
+    width: 95%;
+    margin: auto;
+    ;
+  }
+  .banner {
+    display: none;
+  }
+
+  .cell-banner {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .email {
+    padding-left: 10px;
+    font-size: 1.0em;
+    line-height: 1.0em;
+
+  }
+  .col-outer {
+    background-color: darkcyan;
+    width: 100%;
+  }
+
+
+  .col-inner {
+    background-color: darkcyan;
+    width: 100%;
+    margin: auto;
+  }
+  .reg-outer {
+    width: 100%;
+    margin: auto;
+    background-color: brown;
+    padding-top: 20px;
+
+
+  }
+  .reg-inner {
+    width: 90%;
+    margin: auto;
+    background-color: #aa1923;
+
+    padding-right: 10px;
+
+    padding-left: 10px;
+  }
+  input[type="submit"] {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+  }
+  input[type="submit"]:hover {
+    width: 58%;
+    margin-left: 21%;
+    margin-right: 21%;
+
+  }
+  input[type="reset"] {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+
+  }
+  input[type="reset"]:hover {
+    width: 18%;
+    margin-left: 41%;
+    margin-right: 41%;
+
+  }
+  .hands {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    opacity: .7;
+  }
+
+  /*----------------------------------------------laptops---------*/
+  @media (min-width: 992px) {
+    header {
+      width: 100%;
+      margin: 0;
+      background-color: darkcyan;
+    }
+    nav {
+      width: 95%;
+      margin: auto;
+      ;
+    }
+    .banner {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+    .logo {
+      width: 35%;
+      margin: auto;
+      padding-top: 15px;
+    }
+    .cell-banner {
+      display: none;
+    }
+    .email {
+      padding-left: 10px;
+      font-size: 1.0em;
+      line-height: 1.0em;
+
+    }
+
+
+    .col-inner {
+      background-color: darkcyan;
+      width: 100%;
+      margin: auto;
+    }
+    .reg-outer {
+      width: 70%;
+      margin: auto;
+      background-color: brown;
+      padding-top: 20px;
+
+
+    }
+    .reg-inner {
+      width: 60%;
+      margin: auto;
+      background-color: #aa1923;
+
+      padding-right: 10px;
+
+      padding-left: 10px;
+    }
+    input[type="submit"] {
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+
+    }
+    input[type="submit"]:hover {
+      width: 58%;
+      margin-left: 21%;
+      margin-right: 21%;
+
+    }
+    input[type="reset"] {
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 40%;
+
+    }
+    input[type="reset"]:hover {
+      width: 18%;
+      margin-left: 41%;
+      margin-right: 41%;
+
+    }
+    .hands {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 20px;
+      opacity: .7;
+    }
+
+    .container-1 {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .container-1 div {
+      border: none;
+      padding: 0 5px;
+    }
+    /*-------------------------------------------widescreens---------*/
+    @media screen and (min-width: 1200px) {
+
+
+
+      nav {
+        width: 75%;
+        margin: auto;
+      }
+      .banner {
+        width: 100%;
+        margin: 0;
+      }
+      .logo {
+        width: 35%;
+        margin: auto;
+        padding-top: 15px;
+      }
+      .email {
+        padding-left: 35px;
+        font-size: 1.0em;
+        line-height: 1.0em;
+      }
+      .container-1 {
+        width: 75%;
+        margin: auto;
+      }
+      .col-outer {
+        width: 100%;
+        margin: 0;
+        background-color: #262626;
+      }
+      .col-inner {
+        background-color: darkcyan;
+        width: 70%;
+        margin: auto;
+      }
+      .reg-outer {
+        width: 70%;
+        margin: auto;
+        background-color: brown;
+        padding-top: 20px;
+
+
+      }
+      .reg-inner {
+        width: 40%;
+        margin: auto;
+        background-color: #aa1923;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      input[type="submit"] {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+
+      }
+      input[type="submit"]:hover {
+        width: 58%;
+        margin-left: 21%;
+        margin-right: 21%;
+
+      }
+      input[type="reset"] {
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+
+      }
+      input[type="reset"]:hover {
+        width: 18%;
+        margin-left: 41%;
+        margin-right: 41%;
+
+      }
+      .hands-index{
+        width:38%;
+        margin:10px 31% 5px 31%;
+       opacity:.8;
+      }
+      
+      .hands {
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+        opacity: .7;
+      }
