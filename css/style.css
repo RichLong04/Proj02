@@ -308,6 +308,44 @@ display:block;
   font-style: oblique;
 }
 
+#peru{
+  display:block;
+  width:50%;
+  margin-left:25%;
+  margin-right: 25%;
+  padding-bottom:5px;
+}
+#cong2018{
+  width:70%;
+  margin:auto;
+}
+
+#main-events{
+  width:70%;
+  margin:auto;
+  
+}
+#cong2018{
+ 
+  border-top: 1px solid brown;
+  
+}
+#cong2018 p{
+  font-size:1.10em;
+  line-height:1.25em;
+  font-family: 'Didact Gothic', sans-serif;
+  color:black;
+}
+#sthemes{
+  border-top: 1px solid brown;
+ 
+}
+#sthemes p{
+ font-family: 'Didact Gothic', sans-serif;
+  
+  line-height:1.2em;
+}
+
 
 
 
@@ -412,7 +450,7 @@ p {
   /* 16px, (16px/16px=1em) */
   line-height: 1.2em;
   /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;
+  padding:10px;
   /* ~4px, (4px/16px=0.25em) */
   text-align: center;
 }
@@ -790,6 +828,15 @@ input[type="reset"]:hover {
   footer{
     text-align: center;
   }
+  #peru{
+  display:block;
+  width:100%;
+  margin:0;
+}
+#cong2018{
+  width:90%;
+  margin:auto;
+}
   
   
   
